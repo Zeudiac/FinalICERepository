@@ -25,10 +25,10 @@
       </AnchorPane>
       <AnchorPane layoutX="356.0" layoutY="1.0" prefHeight="500.0" prefWidth="350.0">
          <children>
-            <TextField layoutX="101.0" layoutY="157.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <PasswordField layoutX="101.0" layoutY="202.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button contentDisplay="CENTER" layoutX="103.0" layoutY="260.0" mnemonicParsing="false" onAction="#loginClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Login" />
-            <Button contentDisplay="CENTER" layoutX="102.0" layoutY="308.0" mnemonicParsing="false" onAction="#createAccountClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Create Account" />
+            <TextField fx:id="userNameField" layoutX="101.0" layoutY="157.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="101.0" layoutY="202.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="loginButton" contentDisplay="CENTER" layoutX="103.0" layoutY="260.0" mnemonicParsing="false" onAction="#loginClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Login" />
+            <Button fx:id="createAccountButton" contentDisplay="CENTER" layoutX="102.0" layoutY="308.0" mnemonicParsing="false" onAction="#createAccountClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Create Account" />
             <Group />
             <Text fill="#0598ff" layoutX="31.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login or Create Account" textAlignment="CENTER" wrappingWidth="288.94140625">
                <font>
