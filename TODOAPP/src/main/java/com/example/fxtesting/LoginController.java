@@ -14,13 +14,16 @@ public class LoginController {
     @FXML
     private AnchorPane LoginAnchorPane;
 
+
     @FXML
     void createAccountClicked(ActionEvent event) throws IOException {
         new SceneSwitch(LoginAnchorPane,"createAccount.fxml");
     }
-
     @FXML
     void loginClicked(ActionEvent event) throws IOException {
+        
+        new SceneSwitch(LoginAnchorPane,"projectView.fxml");
+
 
     }
 
