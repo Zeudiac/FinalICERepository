@@ -21,7 +21,7 @@ public class LoginController {
     }
     @FXML
     void loginClicked(ActionEvent event) throws IOException {
-
+        
         new SceneSwitch(LoginAnchorPane,"projectView.fxml");
 
     }
