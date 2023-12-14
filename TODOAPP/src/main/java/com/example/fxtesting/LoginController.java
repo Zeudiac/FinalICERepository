@@ -59,7 +59,6 @@ public class LoginController {
 
     @FXML
     private TextField userNameField;
-
 }
 
 
