@@ -79,10 +79,12 @@ public class TaskView {
 
             String saveTask= checkText1.getText()+";"+ System.lineSeparator();
 
+
             fileWriter.write(saveTask);
 
         } catch (IOException e){
             e.printStackTrace();
+
         }
 
 
