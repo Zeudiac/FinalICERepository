@@ -23,8 +23,8 @@
       </AnchorPane>
       <AnchorPane fx:id="anchorPaneaddNewList" layoutX="356.0" layoutY="1.0" prefHeight="500.0" prefWidth="350.0">
          <children>
-            <CheckBox fx:id="checkList" layoutX="35.0" layoutY="79.0" mnemonicParsing="false" />
-            <TextField fx:id="toDoListText" layoutX="61.0" layoutY="76.0" prefHeight="25.0" prefWidth="275.0" promptText="What do you have in mind?" />
+            <CheckBox fx:id="checkBox1" layoutX="35.0" layoutY="79.0" mnemonicParsing="false" />
+            <TextField fx:id="checkText1" layoutX="61.0" layoutY="76.0" prefHeight="25.0" prefWidth="275.0" promptText="What do you have in mind?" />
             <Button fx:id="saveListButton" contentDisplay="CENTER" layoutX="245.0" layoutY="456.0" mnemonicParsing="false" onAction="#saveListClicked" prefHeight="30.0" prefWidth="97.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Save and exist" />
             <Button fx:id="addNewListButton" contentDisplay="CENTER" layoutX="127.0" layoutY="456.0" mnemonicParsing="false" onAction="#addNewTaskClicked" prefHeight="30.0" prefWidth="97.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Add new task" />
             <Text fill="#0598ff" layoutX="53.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your tasks for today">

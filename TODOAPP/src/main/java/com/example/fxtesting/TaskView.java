@@ -7,7 +7,10 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TaskView {
 
@@ -23,6 +26,10 @@ public class TaskView {
     private Button addNewListButton;
     @FXML
     private  Button goBackButton;
+    @FXML
+    private TextField checkText1;
+    @FXML
+    private CheckBox checkBox1;
 
 
     private double count = 30;
@@ -67,6 +74,19 @@ public class TaskView {
 
     @FXML
     void saveListClicked(ActionEvent event) throws IOException {
+
+        try (FileWriter fileWriter = new FileWriter("/Users/alfredofernandez/Desktop/Datamatiker/FinalICERepository/TODOAPP/src/SaveTask/Tasks")){
+
+            String saveTask= checkText1.getText()+";"+ System.lineSeparator();
+
+            fileWriter.write(saveTask);
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
+
+
         new SceneSwitch(taskAnchorPane,"Login.fxml");
     }
 
