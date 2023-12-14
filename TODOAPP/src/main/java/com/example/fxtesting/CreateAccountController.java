@@ -6,6 +6,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -34,6 +35,9 @@ public class CreateAccountController {
     @FXML
     private AnchorPane accountCreated;
 
+    @FXML
+    private Text fieldEmptyText;
+
 
     @FXML
     void loginFromCreatedAccount(ActionEvent event) throws IOException {
@@ -43,14 +47,21 @@ public class CreateAccountController {
     @FXML
     void createAccount(ActionEvent event) throws IOException {
         try (FileWriter fileWriter = new FileWriter("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\Database\\Users", true)) {
-            String userCredentials = userNameField.getText() + ";" + passwordField.getText() + System.lineSeparator();
-            fileWriter.write(userCredentials);
+            if (!userNameField.getText().isBlank() && !passwordField.getText().isBlank()) {
+
+                String userCredentials = userNameField.getText() + ";" + passwordField.getText() + System.lineSeparator();
+                fileWriter.write(userCredentials);
+                new SceneSwitch(createAccountAchor, "signupSucces.fxml");
+            }
+
+            else{
+                fieldEmptyText.setText("Seems one of the fields were empty - pleasy try again.");
+            }
         } catch (IOException e) {
             e.printStackTrace(); // Log the exception or handle it appropriately
         }
-
-        new SceneSwitch(createAccountAchor,"signupSucces.fxml");
     }
+
 
 
     @FXML

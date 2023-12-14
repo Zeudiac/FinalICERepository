@@ -44,8 +44,8 @@ public class LoginSuccesfullController {
     }
 
     @FXML
-    void viewProjectsclick(ActionEvent event) {
-
+    void viewProjectsclick(ActionEvent event) throws IOException {
+        new SceneSwitch(loginSuccesfullAnchor,"Task-View.fxml");
     }
 
     @FXML

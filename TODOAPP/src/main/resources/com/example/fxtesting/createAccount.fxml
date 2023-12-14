@@ -33,8 +33,13 @@
                   <Font size="32.0" />
                </font>
             </Text>
-            <Button contentDisplay="CENTER" layoutX="106.0" layoutY="319.0" mnemonicParsing="false" onAction="#goBackClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Go Back" />
-            <Button fx:id="createAccountButton" contentDisplay="CENTER" layoutX="106.0" layoutY="282.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Create account" />
+            <Button contentDisplay="CENTER" layoutX="103.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBackClicked" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Go Back" />
+            <Button fx:id="createAccountButton" contentDisplay="CENTER" layoutX="103.0" layoutY="320.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Create account" />
+            <Text fx:id="fieldEmptyText" fill="#0598ff" layoutX="60.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="235.205078125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </children>

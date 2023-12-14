@@ -24,7 +24,7 @@
       </AnchorPane>
       <AnchorPane layoutX="356.0" layoutY="1.0" prefHeight="500.0" prefWidth="350.0">
          <children>
-            <Button fx:id="loginButton" contentDisplay="CENTER" layoutX="103.0" layoutY="260.0" mnemonicParsing="false" onAction="#viewProjectsclick" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="View Projets" />
+            <Button fx:id="loginButton" contentDisplay="CENTER" layoutX="103.0" layoutY="260.0" mnemonicParsing="false" onAction="#viewProjectsclick" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="View my tasks" />
             <Button fx:id="createAccountButton" contentDisplay="CENTER" layoutX="103.0" layoutY="311.0" mnemonicParsing="false" onAction="#accountInformationClick" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0598ff; -fx-text-fill: #FFFFFF;" text="Account Information" />
             <Group />
             <Label fx:id="incorrectCrLabel" alignment="CENTER" layoutX="31.0" layoutY="361.0" prefHeight="103.0" prefWidth="289.0" textFill="#0598ff">
