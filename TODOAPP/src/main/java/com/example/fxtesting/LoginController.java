@@ -24,6 +24,7 @@ public class LoginController {
         
         new SceneSwitch(LoginAnchorPane,"projectView.fxml");
 
+
     }
 
     @FXML
