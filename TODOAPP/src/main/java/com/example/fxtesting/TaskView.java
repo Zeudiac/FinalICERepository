@@ -93,22 +93,19 @@ public class TaskView {
 
     @FXML
     void saveListClicked(ActionEvent event) throws IOException {
-        for (TextField t: textFields){
-                try (FileWriter fileWriter = new FileWriter("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\SaveTask\\Tasks", true)) {
+        String saveTask1="";
+        for (TextField t: textFields) {
+            saveTask1+=t.getText() + System.lineSeparator();
+        }
+        try (FileWriter fileWriter = new FileWriter("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\SaveTask\\Tasks")) {
 
-                    String saveTask = t.getText() + System.lineSeparator();
+            fileWriter.write(saveTask1);
 
-
-                    fileWriter.write(saveTask);
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         new SceneSwitch(taskAnchorPane,"loginSuccesfull.fxml");
-    }
     }
 
     @FXML
