@@ -1,0 +1,83 @@
+@startuml
+!pragma layout smetana
+class TaskView {
+- AnchorPane taskAnchorPane
+- AnchorPane anchorPaneaddNewList
+- Button saveListButton
+- Button addNewListButton
+- Button goBackButton
+- TextField checkText1
+- CheckBox checkBox1
+- Text tooManyTasksText
+- int lineCount
+~ File file
+~ String[] tasks
+- double count
+- double boxYPlace
+- double textYPlace
+~ ArrayList<TextField> textFields
+~ ArrayList<CheckBox> checkBoxes
+~ void goBackClicked()
+~ void addNewTaskClicked(ActionEvent)
+~ void saveListClicked(ActionEvent)
+~ void loadTasksClick(ActionEvent)
+}
+class LoginController {
+~ File file
+- AnchorPane LoginAnchorPane
+- Label incorrectCrLabel
+- Button createAccountButton
+- Button loginButton
+- PasswordField passwordField
+- TextField userNameField
+~ void createAccountClicked(ActionEvent)
+~ void loginClicked(ActionEvent)
+}
+class HelloApplication {
++ void start(Stage)
++ {static} void main(String[])
+}
+class User {
+- String userN
++ String getUserN()
+}
+class CreateAccountController {
+- AnchorPane createAccountAchor
+- Button createAccountButton
+- PasswordField passwordField
+- TextField userNameField
+- Button loginButton
+- CheckBox showPasswordBtn
+- AnchorPane accountCreated
+- Text fieldEmptyText
+~ void loginFromCreatedAccount(ActionEvent)
+~ void createAccount(ActionEvent)
+~ void goBackClicked(ActionEvent)
+}
+class SceneSwitch {
++ SceneSwitch((AnchorPane currentAnchorPane, String fxml)
+}
+class LoginSuccesfullController {
+- Button createAccountButton
+- Button createAccountButton1
+- Label incorrectCrLabel
+- Button loginButton
+- AnchorPane loginSuccesfullAnchor
+- Text welcomeUser
++ String userN
+~ void accountInformationClick(ActionEvent)
+~ void signOutClick(ActionEvent)
+~ void viewProjectsclick(ActionEvent)
+~ void onDragWelcome(MouseEvent)
++ void setUserN(String)
+}
+
+
+
+HelloApplication o-- LoginController
+HelloApplication o-- TaskView
+HelloApplication o-- User
+HelloApplication o-- SceneSwitch
+HelloApplication o-- LoginSuccesfullController
+HelloApplication o-- CreateAccountController
+@enduml

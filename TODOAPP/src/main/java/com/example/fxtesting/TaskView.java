@@ -37,7 +37,7 @@ public class TaskView {
     @FXML
     private Text tooManyTasksText;
     private int lineCount;
-    File file = new File("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\SaveTask\\Tasks");
+    File file = new File("/Users/albertevallentin/Documents/GitHub/FinalICERepository/TODOAPP/src/SaveTask/Tasks");
 
     String[] tasks = new String[11];
 
@@ -97,7 +97,7 @@ public class TaskView {
         for (TextField t: textFields) {
             saveTask1+=t.getText() + System.lineSeparator();
         }
-        try (FileWriter fileWriter = new FileWriter("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\SaveTask\\Tasks")) {
+        try (FileWriter fileWriter = new FileWriter("/Users/albertevallentin/Documents/GitHub/FinalICERepository/TODOAPP/src/SaveTask/Tasks")) {
 
             fileWriter.write(saveTask1);
 

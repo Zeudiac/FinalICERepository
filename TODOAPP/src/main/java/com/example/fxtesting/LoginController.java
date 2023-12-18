@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class LoginController {
-    File file = new File("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\Database\\Users");
+    File file = new File("/Users/albertevallentin/Documents/GitHub/FinalICERepository/TODOAPP/src/Database/Users");
 
     @FXML
     private AnchorPane LoginAnchorPane;

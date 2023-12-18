@@ -46,7 +46,7 @@ public class CreateAccountController {
 
     @FXML
     void createAccount(ActionEvent event) throws IOException {
-        try (FileWriter fileWriter = new FileWriter("C:\\Users\\Malte\\OneDrive\\Dokumenter\\GitHub\\FinalICERepository\\TODOAPP\\src\\Database\\Users", true)) {
+        try (FileWriter fileWriter = new FileWriter("/Users/albertevallentin/Documents/GitHub/FinalICERepository/TODOAPP/src/Database/Users", true)) {
             if (!userNameField.getText().isBlank() && !passwordField.getText().isBlank()) {
 
                 String userCredentials = userNameField.getText() + ";" + passwordField.getText() + System.lineSeparator();
